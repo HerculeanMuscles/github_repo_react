@@ -8,7 +8,7 @@ import { EffectCoverflow } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
-function Gith() {
+function GithSlider() {
 	const GithLoading = Gith_loading(Gith_card);
 	const [appState, setAppState] = useState({
 		loading: false,
@@ -58,14 +58,8 @@ function Gith() {
 				</div>
 				<div className="swiper-pagination"></div>
 			</Swiper>
-			<div>
-				<h1>My Repositories</h1>
-				<div className="gith">
-					<GithLoading isLoading={appState.loading} repos={appState.repos} />
-				</div>
-			</div>
 		</>
 	);
 }
 
-export default Gith;
+export default GithSlider;
